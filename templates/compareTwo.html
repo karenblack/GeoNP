@@ -61,25 +61,22 @@
 	</nav>
 
 
-<!------- 3 Columns------>
+<!------- 2 Columns------>
 	<div class="container" id="compare_full">
 
 		<!-------Park Names------>
 		<div class="row">
-			<div class="col-4 parkName">
+			<div class="col-6 parkName">
 			  <h3>{{title[0]}}</h3>
 			</div>
-			<div class="col-4 parkName">
+			<div class="col-6 parkName">
 			  <h3>{{title[1]}}</h3>
-			</div>
-			<div class="col-4 parkName">
-			  <h3>{{title[2]}}</h3>
 			</div>
 		</div></br>
 
 		<!-------park info box (est, website link) and Map------>
 		<div class="row">
-			<div class="col-4">
+			<div class="col-6">
 				<h4 class = "geoText">About</h4>
 					<!--InfoBox -->
 				<div class = "row">
@@ -118,7 +115,7 @@
 				</div>
 			</div>
 
-			<div class="col-4">
+			<div class="col-6">
 				<h4 class = "geoText">About</h4>
 				<!--InfoBox -->
 				<div class = "row">
@@ -154,47 +151,11 @@
 					</div>		
 				</div>
 			</div>
-
-			<div class="col-4">
-				<h4 class = "geoText">About</h4>
-				<!--InfoBox -->
-					<div class = "row">
-					<div class = "col-4 infobox text-wrap">
-						<p class = "text-start"><b>Established: </b>{{est[2]}}</p>
-						<p class = "text-start"><b>Visitors: </b>{{vis[2]}})</p>
-						<a class = "text-start" href = {{web[2]}} target="_blank">NPS Website</a>
-					</div>
-
-					<!-- Map -->
-					<div class = "col-7 map" id="map2">
-						<script type ="text/javascript"> 
-							var coords = {{map|tojson}};
-							var mymap = L.map('map2').setView(coords[2], 9);
-
-							L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia2FyZW5iMjk4NyIsImEiOiJja29laTMzZDcwYXM3Mm9taXMxaXl0ODZlIn0.4lfKRlr9H5VcT5ao8tQSJA', {
-								attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-								maxZoom: 17,
-								id: 'mapbox/streets-v11',
-								tileSize: 512,
-								zoomOffset: -1,
-								accessToken: 'pk.eyJ1Ijoia2FyZW5iMjk4NyIsImEiOiJja29laTMzZDcwYXM3Mm9taXMxaXl0ODZlIn0.4lfKRlr9H5VcT5ao8tQSJA'
-								}).addTo(mymap);
-
-							L.marker(coords[2]).addTo(mymap)
-    							.bindPopup(title[2] + 'National Park')
-    							.openPopup();
-							function myFunc(vars){
-							return vars
-						}
-						</script>
-					</div>		
-				</div>
-			</div>
 		</div></br>
 
 		<!-------Geologic History------>
 		<div class="row geoPara overflow-auto">
-			<div class="col-4 geoText overflow-auto">
+			<div class="col-6 geoText overflow-auto">
 				<h4>Geologic History</h4>
 				<img class = "float-end parkImage" src={{urls[0]}} alt= "parkImage" >
 				{% autoescape false %}
@@ -202,37 +163,24 @@
 				{% endautoescape %}
 			</div>
 
-			<div class="col-4 geoText overflow-auto">
+			<div class="col-6 geoText overflow-auto">
 				<h4>Geologic History</h4>
 				<img class = "float-end parkImage" src={{urls[1]}} alt = "parkImage">
 				{% autoescape false %}
 				<p>{{geo[1]}}</p>
 				{% endautoescape %}
 			</div>
-
-			<div class="col-4 geoText overflow-auto">
-				<h4>Geologic History</h4>
-				<img class = "float-end parkImage" src={{urls[2]}} alt="parkImage">
-				{% autoescape false %}
-				<p>{{geo[2]}}</p>
-				{% endautoescape %}
-			</div>
 		</div></br>
-
 
 		<!-------Hiking Info------>
 		<div class="row overflow-auto">
-			<div class="col-4 text-start">
+			<div class="col-6 text-start">
 			<h4>Hiking</h4>
 			  <iframe class="alltrails" src="https://www.alltrails.com/widget/parks/{{state[0]}}/{{hike[0]}}?u=i" width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
 			</div>
-			<div class="col-4 text-start">
+			<div class="col-6 text-start">
 			<h4>Hiking</h4>
 			  <iframe class="alltrails" src="https://www.alltrails.com/widget/parks/{{state[1]}}/{{hike[1]}}?u=i" width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
-			</div>
-			<div class="col-4 text-start">
-			<h4>Hiking</h4>
-			  <iframe class="alltrails" src="https://www.alltrails.com/widget/parks/{{state[2]}}/{{hike[2]}}?u=i" width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
 			</div>
 		</div></br>
 

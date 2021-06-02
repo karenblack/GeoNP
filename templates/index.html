@@ -73,60 +73,58 @@
 	</br>
 
 	<!-------WebPage Main Title/Heading------>
-
-	</br>
 	<!-------Background image for NP Park Selections------>
 	<div class = "container">
 <!-- 		<div class = gx-1> -->
-		<div class="p-5 text-center rounded mb-5" id = 'background'>
-		  <h5 class="mb-3 h2 text-white" id ="selectTitle">Select 3 National Parks</h5>
-		  <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="popover" title="Directions" data-bs-content="Select exactly 3 U.S. National Parks using the toggle buttons. Selected park buttons will change from a white background to a blue background. Deselect park buttons will change from a blue background to a while background.">Directions</button>
+		<div class="p-5 text-center rounded mb-3" id = 'background'>
+		  <h5 class="mb-3" id ="selectTitle">Select 2 - 3 National Parks</h5>
+		  <button type="button" class="btn btn-sm btn-danger mb-3" data-bs-toggle="popover" title="Directions" data-bs-content="Select 2 or 3 U.S. National Parks using the toggle buttons. Selected park buttons will change from a white background to a green background. Deselect park buttons will change from a green background to a white background.">Directions</button>
 		  	<div class="parks">
-			  		<div class="parksText">
+			  		<div class="parksText mt-3 pt-2">
 			  			<form action = "/compare" class = "parksText" id = "parkSelection" method = "post">
 			  				<div class = "row">
 				  				<div class = "col-6">
 				  					<h5>Alaska</h5>
-				  					<input type="checkbox" class="btn-check" id="denali" autocomplete="off" value = "Denali_National_Park_and_Preserve" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="denali" autocomplete="off" value = "Denali_National_Park_and_Preserve,alaska" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="denali">Denali</label>
 
-									<input type="checkbox" class="btn-check" id="gatesOfArctic" autocomplete="off" value = "Gates_of_the_Arctic_National_Park_and_Preserve" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="gatesOfArctic" autocomplete="off" value = "Gates_of_the_Arctic_National_Park_and_Preserve,alaska" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="gatesOfArctic">Gates of the Arctic</label>
 
-									<input type="checkbox" class="btn-check" id="glacierBay" autocomplete="off" value = "Glacier_Bay_National_Park_and_Preserve" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="glacierBay" autocomplete="off" value = "Glacier_Bay_National_Park_and_Preserve,alaska" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="glacierBay">Glacier Bay</label>
 
-									<input type="checkbox" class="btn-check" id="katmai" autocomplete="off" value = "Katmai_National_Park_and_Preserve" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="katmai" autocomplete="off" value = "Katmai_National_Park_and_Preserve,alaska" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="katmai">Katmai</label>
 
-									<input type="checkbox" class="btn-check" id="kenaiFjords" autocomplete="off" value = "Kenai_Fjords_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="kenaiFjords" autocomplete="off" value = "Kenai_Fjords_National_Park,alaska" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="kenaiFjords">Kenai Fjords</label>
 
-									<input type="checkbox" class="btn-check" id="kobukValley" autocomplete="off" value = "Kobuk_Valley_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="kobukValley" autocomplete="off" value = "Kobuk_Valley_National_Park,alaska" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="kobukValley">Kobuk Valley</label>
 
-									<input type="checkbox" class="btn-check" id="lakeClark" autocomplete="off" value = "Lake_Clark_National_Park_and_Preserve" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="lakeClark" autocomplete="off" value = "Lake_Clark_National_Park_and_Preserve,alaska" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="lakeClark">Lake Clark</label>
 
-									<input type="checkbox" class="btn-check" id="wrangell" autocomplete="off" value = "Wrangell-St._Elias_National_Park_and_Preserve" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="wrangell" autocomplete="off" value = "Wrangell-St._Elias_National_Park_and_Preserve,alaska" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="wrangell">Wrangell-St. Elias</label>
 				  				</div>
 
 				  				<div class="col-4">
 									<h5>Arizona</h5>
-				  					<input type="checkbox" class="btn-check" id="grandCanyon" autocomplete="off" value = "Grand_Canyon_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="grandCanyon" autocomplete="off" value = "Grand_Canyon_National_Park,arizona" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="grandCanyon">Grand Canyon</label>
 
-									<input type="checkbox" class="btn-check" id="petrifiedForest" autocomplete="off" value = "Petrified_Forest_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="petrifiedForest" autocomplete="off" value = "Petrified_Forest_National_Park,arizona" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="petrifiedForest">Petrified Forest</label>
 
-									<input type="checkbox" class="btn-check" id="saguaro" autocomplete="off" value = "Saguaro_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="saguaro" autocomplete="off" value = "Saguaro_National_Park,arizona" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="saguaro">Saguaro</label>
 				  				</div>
 
 				  				<div class = "col-2">
 				  					<h5>Arkansas</h5>
-				  					<input type="checkbox" class="btn-check" id="hotSprings" autocomplete="off" value = "Hot_Springs_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="hotSprings" autocomplete="off" value = "Hot_Springs_National_Park,arkansas" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="hotSprings">Hot Springs</label>
 				  				</div>
 			  				</div></br>
@@ -134,105 +132,105 @@
 			  				<div class = "row">
 				  				<div class = "col-5">
 				  					<h5>California</h5>
-				  					<input type="checkbox" class="btn-check" id="channelIslands" autocomplete="off" value = "Channel_Islands_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="channelIslands" autocomplete="off" value = "Channel_Islands_National_Park,california" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="channelIslands">Channel Islands</label>
 
-									<input type="checkbox" class="btn-check" id="deathValley" autocomplete="off" value = "Death_Valley_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="deathValley" autocomplete="off" value = "Death_Valley_National_Park,california" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="deathValley">Death Valley</label>
 
-									<input type="checkbox" class="btn-check" id="joshuaTree" autocomplete="off" value = "Joshua_Tree_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="joshuaTree" autocomplete="off" value = "Joshua_Tree_National_Park,california" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="joshuaTree">Joshua Tree</label>
 
-									<input type="checkbox" class="btn-check" id="kingsCanyon" autocomplete="off" value = "Kings_Canyon_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="kingsCanyon" autocomplete="off" value = "Kings_Canyon_National_Park,california" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="kingsCanyon">Kings Canyon</label>
 
-									<input type="checkbox" class="btn-check" id="lassen" autocomplete="off" value = "Lassen_Volcanic_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="lassen" autocomplete="off" value = "Lassen_Volcanic_National_Park,california" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="lassen">Lassen Volcanic</label>
 
-									<input type="checkbox" class="btn-check" id="pinnacles" autocomplete="off" value = "Pinnacles_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="pinnacles" autocomplete="off" value = "Pinnacles_National_Park,california" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="pinnacles">Pinncacles</label>
 
-									<input type="checkbox" class="btn-check" id="redwood" autocomplete="off" value = "Redwood_National_and_State_Parks" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="redwood" autocomplete="off" value = "Redwood_National_and_State_Parks,california" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="redwood">Redwood</label>
 
-									<input type="checkbox" class="btn-check" id="sequoia" autocomplete="off" value = "Sequoia_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="sequoia" autocomplete="off" value = "Sequoia_National_Park,california" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="sequoia">Sequoia</label>
 
-									<input type="checkbox" class="btn-check" id="yosemite" autocomplete="off" value = "Yosemite_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="yosemite" autocomplete="off" value = "Yosemite_National_Park,california" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="yosemite">Yosemite</label>
 				  				</div>
 
 				  				<div class="col-4">
 									<h5>Colorado</h5>
-				  					<input type="checkbox" class="btn-check" id="blackCanyon" autocomplete="off" value = "Black_Canyon_of_the_Gunnison_National_Park_" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="blackCanyon" autocomplete="off" value = "Black_Canyon_of_the_Gunnison_National_Park,colorado" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="blackCanyon">Black Canyon of the Gunnison</label>
 
-									<input type="checkbox" class="btn-check" id="greatSandDunes" autocomplete="off" value = "Great_Sand_Dunes_National_Park_and_Preserve" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="greatSandDunes" autocomplete="off" value = "Great_Sand_Dunes_National_Park_and_Preserve,colorado" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="greatSandDunes">Great Sand Dunes</label>
 
-									<input type="checkbox" class="btn-check" id="mesaVerde" autocomplete="off" value = "Mesa_Verde_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="mesaVerde" autocomplete="off" value = "Mesa_Verde_National_Park,colorado" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="mesaVerde">Mesa Verde</label>
 
-									<input type="checkbox" class="btn-check" id="rockymtn" autocomplete="off" value = "Rocky_Mountain_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="rockymtn" autocomplete="off" value = "Rocky_Mountain_National_Park,colorado" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="rockymtn">Rocky Mountain</label>
 				  				</div>
 
 				  				<div class = "col-3">
 				  					<h5>Florida</h5>
-				  					<input type="checkbox" class="btn-check" id="biscayne" autocomplete="off" value = "Biscayne_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="biscayne" autocomplete="off" value = "Biscayne_National_Park,florida" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="biscayne">Biscayne</label>
 
-									<input type="checkbox" class="btn-check" id="dryTortugas" autocomplete="off" value = "Dry_Tortugas_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="dryTortugas" autocomplete="off" value = "Dry_Tortugas_National_Park,florida" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="dryTortugas">Dry Tortugas</label>
 
-									<input type="checkbox" class="btn-check" id="everyglades" autocomplete="off" value = "Everglades_National_Park" name = "parkToggle">
-									<label class="btn btn-outline-primary btn-sm" for="everyglades">Evergaldes</label>
+									<input type="checkbox" class="btn-check" id="everyglades" autocomplete="off" value = "Everglades_National_Park,florida" name = "parkToggle">
+									<label class="btn btn-outline-primary btn-sm" for="everyglades">Everglades</label>
 				  				</div>
 			  				</div></br>
 
 			  				<div class = "row">
 				  				<div class = "col-3">
 				  					<h5>Hawaii</h5>
-				  					<input type="checkbox" class="btn-check" id="hawaiiVolcanoes" autocomplete="off" value = "Hawaii_Volcanoes_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="hawaiiVolcanoes" autocomplete="off" value = "Hawaii_Volcanoes_National_Park,hawaii" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="hawaiiVolcanoes">Hawaii Volcanoes</label>
 
-									<input type="checkbox" class="btn-check" id="haleakalā" autocomplete="off" value = "Haleakalā_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="haleakalā" autocomplete="off" value = "Haleakalā_National_Park,hawaii" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="haleakalā">Haleakalā</label>
 				  				</div>
 
 				  				<div class="col">
 									<h5>Indiana</h5>
-				  					<input type="checkbox" class="btn-check" id="indiana" autocomplete="off" value = "Indiana_Dunes_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="indiana" autocomplete="off" value = "Indiana_Dunes_National_Park,indiana" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="indiana">Indiana Dunes</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>Kentucky</h5>
-				  					<input type="checkbox" class="btn-check" id="mammoth" autocomplete="off" value = "Mammoth_Cave_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="mammoth" autocomplete="off" value = "Mammoth_Cave_National_Park,kentucky" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="mammoth">Mammoth Cave</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>Maine</h5>
-				  					<input type="checkbox" class="btn-check" id="acadia" autocomplete="off" value = "Acadia_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="acadia" autocomplete="off" value = "Acadia_National_Park,maine" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="acadia">Acadia</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>Michigan</h5>
-				  					<input type="checkbox" class="btn-check" id="isleRoyale" autocomplete="off" value = "Isle_Royale_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="isleRoyale" autocomplete="off" value = "Isle_Royale_National_Park,michigan" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="isleRoyale">Isle Royale</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>Minnesota</h5>
-				  					<input type="checkbox" class="btn-check" id="voyageurs" autocomplete="off" value = "Voyageurs_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="voyageurs" autocomplete="off" value = "Voyageurs_National_Park,minnesota" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="voyageurs">Voyageurs</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>Missouri</h5>
-				  					<input type="checkbox" class="btn-check" id="gatewayArch" autocomplete="off" value = "Gateway_Arch_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="gatewayArch" autocomplete="off" value = "Gateway_Arch_National_Park,missouri" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="gatewayArch">Gateway Arch</label>
 				  				</div>
 			  				</div></br>
@@ -240,46 +238,46 @@
 			  				<div class = "row">
 				  				<div class="col">
 									<h5>Montana</h5>
-				  					<input type="checkbox" class="btn-check" id="glacier" autocomplete="off" value = "Glacier_National_Park_(U.S.)" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="glacier" autocomplete="off" value = "Glacier_National_Park_(U.S.),montana" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="glacier">Glacier</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>Nevada</h5>
-				  					<input type="checkbox" class="btn-check" id="greatBasin" autocomplete="off" value = "Great_Basin_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="greatBasin" autocomplete="off" value = "Great_Basin_National_Park,nevada" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="greatBasin">Great Basin</label>
 				  				</div>
 
 				  				<div class = "col-2">
 				  					<h5>New Mexico</h5>
-				  					<input type="checkbox" class="btn-check" id="carlsbad" autocomplete="off" value = "Carlsbad_Caverns_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="carlsbad" autocomplete="off" value = "Carlsbad_Caverns_National_Park,new-mexico" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="carlsbad">Carlsbad Caverns</label>
 
-				  					<input type="checkbox" class="btn-check" id="whiteSands" autocomplete="off" value = "White_Sands_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="whiteSands" autocomplete="off" value = "White_Sands_National_Park,new-mexico" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="whiteSands">White Sands</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>North Dakota</h5>
-				  					<input type="checkbox" class="btn-check" id="roosevelt" autocomplete="off" value = "Theodore_Roosevelt_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="roosevelt" autocomplete="off" value = "Theodore_Roosevelt_National_Park,north-dakota" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="roosevelt">Theodore Roosevelt</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>Ohio</h5>
-				  					<input type="checkbox" class="btn-check" id="cuyahoga" autocomplete="off" value = "Cuyahoga_Valley_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="cuyahoga" autocomplete="off" value = "Cuyahoga_Valley_National_Park,ohio" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="cuyahoga">Cuyahoga Valley</label>
 				  				</div>
 
 				  				<div class="col">
 									<h5>Oregon</h5>
-				  					<input type="checkbox" class="btn-check" id="craterLake" autocomplete="off" value = "Crater_Lake_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="craterLake" autocomplete="off" value = "Crater_Lake_National_Park,oregon" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="craterLake">Crater Lake</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>South Carolina</h5>
-				  					<input type="checkbox" class="btn-check" id="congaree" autocomplete="off" value = "Congaree_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="congaree" autocomplete="off" value = "Congaree_National_Park,south-carolina" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="congaree">Congaree</label>
 				  				</div>
 			  				</div></br>
@@ -287,43 +285,43 @@
 			  				<div class = "row">
 				  				<div class = "col-3">
 				  					<h5>South Dakota</h5>
-				  					<input type="checkbox" class="btn-check" id="badlands" autocomplete="off" value = "Badlands_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="badlands" autocomplete="off" value = "Badlands_National_Park,south-dakota" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="badlands">Badlands</label>
 
-				  					<input type="checkbox" class="btn-check" id="windCave" autocomplete="off" value = "Wind_Cave_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="windCave" autocomplete="off" value = "Wind_Cave_National_Park,south-dakota" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="windCave">Wind Cave</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>Tennessee</h5>
-				  					<input type="checkbox" class="btn-check" id="smokies" autocomplete="off" value = "Great_Smoky_Mountains_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="smokies" autocomplete="off" value = "Great_Smoky_Mountains_National_Park,tennessee" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="smokies">Great Smoky Mountains</label>
 				  				</div>
 
 				  				<div class = "col-3">
 				  					<h5>Texas</h5>
-				  					<input type="checkbox" class="btn-check" id="bigBend" autocomplete="off" value = "Big_Bend_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="bigBend" autocomplete="off" value = "Big_Bend_National_Park,texas" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="bigBend">Big Bend</label>
 
-				  					<input type="checkbox" class="btn-check" id="guadalupe" autocomplete="off" value = "Guadalupe_Mountains_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="guadalupe" autocomplete="off" value = "Guadalupe_Mountains_National_Park,texas" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="guadalupe">Guadalupe Mountains</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>Utah</h5>
-				  					<input type="checkbox" class="btn-check" id="arches" autocomplete="off" value = "Arches_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="arches" autocomplete="off" value = "Arches_National_Park,utah" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="arches">Arches</label>
 
-									<input type="checkbox" class="btn-check" id="bryce" autocomplete="off" value = "Bryce_Canyon_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="bryce" autocomplete="off" value = "Bryce_Canyon_National_Park,utah" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="bryce">Bryce Canyon</label>
 
-									<input type="checkbox" class="btn-check" id="canyonlands" autocomplete="off" value = "Canyonlands_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="canyonlands" autocomplete="off" value = "Canyonlands_National_Park,utah" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="canyonlands">Canyonlands</label>
 
-									<input type="checkbox" class="btn-check" id="capitolReef" autocomplete="off" value = "Capitol_Reef_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="capitolReef" autocomplete="off" value = "Capitol_Reef_National_Park,utah" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="capitolReef">Capitol Reef</label>
 
-									<input type="checkbox" class="btn-check" id="zion" autocomplete="off" value = "Zion_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="zion" autocomplete="off" value = "Zion_National_Park,utah" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="zion">Zion</label>
 				  				</div>
 			  				</div></br>
@@ -331,43 +329,43 @@
 			  				<div class = "row">
 				  				<div class = "col">
 				  					<h5>Virgina</h5>
-				  					<input type="checkbox" class="btn-check" id="shenandoah" autocomplete="off" value = "Shenandoah_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="shenandoah" autocomplete="off" value = "Shenandoah_National_Park,virginia" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="shenandoah">Shenandoah</label>
 				  				</div>
 
 				  				<div class = "col-3">
 				  					<h5>Washington</h5>
-				  					<input type="checkbox" class="btn-check" id="rainier" autocomplete="off" value = "Mount_Rainier_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="rainier" autocomplete="off" value = "Mount_Rainier_National_Park,washington" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="rainier">Mount Rainier</label>
 
-									<input type="checkbox" class="btn-check" id="cascades" autocomplete="off" value = "North_Cascades_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="cascades" autocomplete="off" value = "North_Cascades_National_Park,washington" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="cascades">North Cascades</label>
 
-									<input type="checkbox" class="btn-check" id="olympic" autocomplete="off" value = "Olympic_National_Park" name = "parkToggle">
+									<input type="checkbox" class="btn-check" id="olympic" autocomplete="off" value = "Olympic_National_Park,washington" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="olympic">Olympic</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>West Virginia</h5>
-				  					<input type="checkbox" class="btn-check" id="newRiver" autocomplete="off" value = "New_River_Gorge_National_Park_and_Preserve" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="newRiver" autocomplete="off" value = "New_River_Gorge_National_Park_and_Preserve,west-virginia" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="newRiver">New River Gorge</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>Wyoming</h5>
-				  					<input type="checkbox" class="btn-check" id="teton" autocomplete="off" value = "Grand_Teton_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="teton" autocomplete="off" value = "Grand_Teton_National_Park,wyoming" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="teton">Grand Teton</label>
 
-				  					<input type="checkbox" class="btn-check" id="yellowstone" autocomplete="off" value = "Yellowstone_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="yellowstone" autocomplete="off" value = "Yellowstone_National_Park,wyoming" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="yellowstone">Yellowstone</label>
 				  				</div>
 
 				  				<div class = "col">
 				  					<h5>Other</h5>
-				  					<input type="checkbox" class="btn-check" id="americanSamoa" autocomplete="off" value = "National_Park_of_American_Samoa" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="americanSamoa" autocomplete="off" value = "National_Park_of_American_Samoa,american-samoa" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="americanSamoa">American Samoa</label>
 
-				  					<input type="checkbox" class="btn-check" id="virginIslands" autocomplete="off" value = "Virgin_Islands_National_Park" name = "parkToggle">
+				  					<input type="checkbox" class="btn-check" id="virginIslands" autocomplete="off" value = "Virgin_Islands_National_Park,us-virgin-islands" name = "parkToggle">
 									<label class="btn btn-outline-primary btn-sm" for="virginIslands">Virgin Islands</label>
 				  				</div>
 			  				</div></br>

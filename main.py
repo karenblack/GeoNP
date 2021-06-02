@@ -19,6 +19,7 @@ def home():
 # to render compare.html page
 @app.route('/compare', methods = ['POST', 'GET'])
 def compare():
+
 	# to store data for each park to render in compare page
 	image_urls=[]					# to store image urls
 	geol = []					    # to store geology paragraph text
@@ -30,7 +31,7 @@ def compare():
 	states=[]						# state for hiking map
 	hikes = []						# hiking titles
 
-	# get the values (park names) submitted for comparison
+	# get the park names submitted for comparison
 	if request.method == 'POST':
 		titles_all = request.form.getlist('parkToggle')
 	
@@ -78,6 +79,7 @@ def compare():
 
 
 def park_titles(title):
+	"""Accepts a park title and formats appropriately for display in 'comparison' page"""
 	try:
 		infobox = requests.get('https://wiki-text-scraper.herokuapp.com/wiki/' + title + '/infobox')
 		info_json = infobox.json()
@@ -93,6 +95,7 @@ def park_titles(title):
 	return parkName
 
 def geology_text(title):
+	"""Accepts a part title and calls the Wikipedia Text Scraper microservice for text from 'Geology' section"""
 	try:
 		geo = requests.get('https://wiki-text-scraper.herokuapp.com/wiki/' + title + '/Geology')
 		print("****GEO*****", title)
@@ -117,6 +120,7 @@ def geology_text(title):
 	return geo_text
 
 def infobox(title):
+	"""Accepts a park title and calls the Wikipedia infobox scraper API to obtain specific Park information"""
 	# get estabilished date
 	try:
 		resp = requests.get('https://wiki-image-scraper.herokuapp.com/api/infobox/?title=' + title + '&fld=est')
@@ -144,12 +148,15 @@ def infobox(title):
 	return [estab_date, visit, nps_url]
 
 def coords(title):
+	"""Accepts a park title and call Wikipedia text scraper microservice to retrieve GPS coordinates"""
+
 	resp = requests.get('https://wiki-text-scraper.herokuapp.com/wiki/' + title + '/coords')
 	resp_json = resp.json()
 	coords = [float(resp_json["lat"]), float(resp_json["lon"])]
 	return coords
 
 def images(title):
+	"""Accepts a park title and requests an image from the Wikipedia image scraping microservice"""
 	image= requests.get('https://wiki-image-scraper.herokuapp.com/api/images/?title=' + title + '&ct=main')
 	image_json = image.json()
 	image_url = {'url': image_json["images"]}
@@ -157,6 +164,7 @@ def images(title):
 	return transform_url
 
 def hiking(title):
+	"""Accepts a park title and formats the title for use in the All Trails widget"""
 	hiking_title = title.lower()
 	hiking_title=hiking_title.replace('_', '-')
 	return hiking_title
